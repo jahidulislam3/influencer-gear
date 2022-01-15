@@ -1,0 +1,111 @@
+/* Google-font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+/* ..................
+     start top blog
+.................... */
+.container-wrapper1{
+    display: flex;
+    justify-content: center;
+}
+.single-blog {
+    width: 454px;
+    padding-right: 196px;
+}
+.single-blog h1 {
+    font-size: 35px;
+}
+.single-blog p {
+    padding-bottom: 19px;
+    line-height: 1.5;
+}
+.single-blog a {
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 24px 10px 20px;
+    font-weight: 800;
+    border-radius: 25px;
+}
+.single-blog a:hover {
+    background-image: linear-gradient(1deg, black, transparent);
+    color: lightyellow;
+}
+.single-blog i {
+    font-size: 14px;
+    padding-left: 12px;
+}
+.blogs-picture img {
+    width: 400px;
+}
+.blogs-picture img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.blogs-picture{
+    /* padding: 10px; */
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+/* .....end top blog...... */
+
+/* .....start collection.... */
+
+.container-wrapper2 {
+    padding: 33px 175px 27px 175px;
+}
+.popular {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.collection-image img {
+    width: 270px;
+    height: 224px;
+}
+.single-collection {
+    padding: 18px;
+    margin: 10px;
+    background: white;
+    box-shadow: 0px 0px 7px -2px;
+    border-radius: 5px;
+}
+.collection-info i {
+    color: #fb8200;
+    padding-right: 4px;
+    font-size: 14px;
+}
+span {
+    padding-left: 8px;
+}
+.collection-info p {
+    width: 252px;
+}
+/* >>>>>>>>>start footer>>>>>>> */
+footer{
+    background-color: #0a0826;
+}
+.containt-wrapper4 {
+    text-align: center;
+    color: white;
+    padding: 25px 0px 40px 0px;
+}
+.icone-part-footer {
+    padding-top: 15px;
+}
+.icone-part-footer i {
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    background-color: #999;
+    border-radius: 100%;
+    width: 30px;
+    margin-right: 20px;
+}
+/* <><><><><>end<><><><><><> */
