@@ -4,6 +4,30 @@
 body{
     font-family: 'Lato', sans-serif;
 }
+/* ......start header....... */
+.manue-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 134px;
+    padding-right: 188px;
+    margin: 20px 0px 15px 0px;
+}
+.singlebar2 a {
+    text-decoration: none;
+    color: #201e1e;
+    font-size: 18px;
+}
+.singlebar2 ul {
+    display: flex;
+    list-style: none;
+}
+.singlebar2 ul li {
+    padding: 0px 10px 0px 10px;
+}
+.singlebar {
+    font-size: 15px;
+}
 /* ..................
      start top blog
 .................... */
@@ -52,6 +76,19 @@ body{
 }
 /* .....end top blog...... */
 
+
+/* .........start picture.......... */
+.marketing-picture {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 30px 20px 30px;
+    border-top: 1px solid #99999961;
+    border-bottom: 1px solid #99999961;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    margin-top: 10px;
+}
 /* .....start collection.... */
 
 .container-wrapper2 {
@@ -143,6 +180,9 @@ span {
     padding-left: 7px;
     font-size: 12px;
 }
+.article-info a:hover {
+    background-image: linear-gradient(45deg, #1a29dd, transparent);
+}
 /* >>>>>>>>>start footer>>>>>>> */
 footer{
     background-color: #0a0826;
@@ -165,3 +205,111 @@ footer{
     margin-right: 20px;
 }
 /* <><><><><>end<><><><><><> */
+
+/*-----------------------
+Media Queries
+-------------------------- */
+/*...... Mobail Devices...... */
+@media only screen and (max-width:688px) {
+   .manue-wrapper{
+       width: 100%;
+   }
+    /* .manue-wrapper{
+       flex-direction: column;
+       grid-template-columns: repeat(2, 1fr);
+   } */
+   .singlebar2{
+     display: none;
+   }
+   .container-wrapper1{
+       width: 100%;
+       flex-direction: column;
+       grid-template-columns: repeat(2, 1fr);
+   }
+   .blogs-picture{
+       margin-left:10px;
+       padding: 0;
+   }
+   .single-blog{
+     padding: 20px;
+   }
+   .marketing-picture{
+       display: none;
+   }
+   .popular{
+       /* width: 100%; */
+       text-align: center;
+   }
+   .container-wrapper2{
+       width: 100%;
+       padding: 0;
+   }
+   .collections{
+       margin-left: 50%;
+       flex-direction: column;
+       grid-template-columns: repeat(1, 1fr);
+   }
+   .container-wrapper3{
+    width: 100%;
+    padding-left:50%;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .color{
+       font-size:20px;
+       padding-left: 50px;
+   }
+   .article-info p{
+       width: 400px;
+   }
+   /* .containt-wrapper4{
+    width: 100%;
+   } */
+}
+
+/* ........tablet Devices ...........*/
+@media only screen and (min-width: 688px) and (max-width:992px) {
+   .singlebar2{
+       display: none;
+   }
+   .container-wrapper1{
+    width: 100%;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .blogs-picture{
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+   }
+  .single-blog{
+    padding: 20px;
+   }
+   .marketing-picture{
+    display: none;
+}
+   .popular{
+    text-align: center;
+   }
+    .container-wrapper2{
+    width: 100%;
+    padding: 0;
+   }
+   .collections{
+       margin-left: 25%;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .container-wrapper3{
+    width: 100%;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .color{
+       font-size:20px;
+       padding-left: 50px;
+   }
+   .article-info p{
+       width: 400px;
+   }
+}
